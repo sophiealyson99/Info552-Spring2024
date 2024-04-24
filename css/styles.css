@@ -442,22 +442,34 @@ footer {
   color: var(--white);
   padding-bottom: 32px;
   text-align: center;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-footer h2 {
+footer > div h2 {
   padding-top: 200px;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-footer form input {
+footer > div form input {
   border-radius: 0;
   border: none;
 }
-footer form button {
+footer > div form button {
   background-color: var(--red);
   padding: 16px;
 }
-footer ul li a {
+footer > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer > div ul li a {
   color: var(--white);
   font-size: 1.875rem;
 }

@@ -10,30 +10,38 @@ footer{
     color: var(--white);
     padding-bottom: 32px;
     text-align: center;
+    height: 60vh;
+    display: flex;
 
-    h2{
-        padding-top: 200px;
-        font-size: rem-calc(24);
-        font-weight: 600;
-        margin-bottom: 8px;
-    }
-
-    form{
-        input{
-            border-radius: 0;
-            border: none;
+    >div{
+        h2{
+            padding-top: 200px;
+            font-size: rem-calc(24);
+            font-weight: 600;
+            margin-bottom: 8px;
         }
-        button{
-            background-color: var(--red);
-            padding: 16px;
+    
+        form{
+            input{
+                border-radius: 0;
+                border: none;
+            }
+            button{
+                background-color: var(--red);
+                padding: 16px;
+            }
         }
-    }
+    
+        ul{
 
-    ul{
-        li{
-            a{
-                color: var(--white);
-                font-size: rem-calc(30);
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                a{
+                    color: var(--white);
+                    font-size: rem-calc(30);
+                }
             }
         }
     }
