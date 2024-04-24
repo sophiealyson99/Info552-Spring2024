@@ -436,7 +436,9 @@ textarea {
     Footer
 ============= */
 footer {
-  background-color: var(--black);
+  background-image: url("../Images/footer/footer.jpg");
+  background-size: cover;
+  background-position: center bottom;
   color: var(--white);
   padding-bottom: 32px;
   text-align: center;
@@ -476,6 +478,12 @@ footer form button {
 #index-hero img {
   width: 100%;
 }
+#index-hero #index-hero-image {
+  height: 500px;
+  background-image: url("../Images/home/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 #index-planning {
   padding: 32px 16px;
@@ -491,7 +499,11 @@ footer form button {
   text-align: left;
 }
 #index-planning #planning-hero {
-  width: 100%;
+  background-image: url("../Images/home/planning/planning.jpg");
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
 #index-planning #planning-callout {
   background-color: var(--green);
