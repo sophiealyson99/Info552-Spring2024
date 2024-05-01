@@ -23,18 +23,18 @@
             margin: 32px 0;
         }
     }
+}
 
-    #index-hero-image{
-        height: 70vh;
-        background-image: url("../Images/home/hero.jpg");
-        // x = right | center | left
-        // y = top | center | bottom
-        background-size: cover;
-        background-position: center;
+#index-hero-image{
+    height: 70vh;
+    background-image: url("../Images/home/hero.jpg");
+    // x = right | center | left
+    // y = top | center | bottom
+    background-size: cover;
+    background-position: center;
 
-        @include md{
-            height: 60vh;
-        }
+    @include md{
+        height: 60vh;
     }
 }
 

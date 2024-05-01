@@ -583,14 +583,15 @@ footer > div ul li a {
 #index-hero > div button {
   margin: 32px 0;
 }
-#index-hero #index-hero-image {
+
+#index-hero-image {
   height: 70vh;
   background-image: url("../Images/home/hero.jpg");
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 768px) {
-  #index-hero #index-hero-image {
+  #index-hero-image {
     height: 60vh;
   }
 }
