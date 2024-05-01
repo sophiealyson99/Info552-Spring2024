@@ -752,6 +752,16 @@ footer > div ul li a {
     height: 50vh;
   }
 }
+@media (min-width: 1024px) {
+  #index-planning #planning-hero {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  #index-planning #planning-hero {
+    width: 928px;
+  }
+}
 #index-planning #planning-callout {
   background-color: var(--green);
   color: var(--blue);

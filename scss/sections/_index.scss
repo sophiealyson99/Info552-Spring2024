@@ -129,6 +129,14 @@
             width: 80vw;
             height: 50vh;
         }
+
+        @include lg{
+            margin-left: 200px;
+        }
+
+        @include xl{
+            width: 928px;
+        }
    }
 
    #planning-callout{
@@ -141,7 +149,7 @@
     margin-top: -20px;
 
     @include md{
-
+        // margin-top: -60px;
     }
 
 
