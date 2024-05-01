@@ -39,7 +39,60 @@
 }
 
 #index-brands{
+    padding: 32px 16px;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
 
+        grid-template-areas: 
+        "tnf tnf yeti yeti"
+        "columbia columbia coleman coleman"
+        ". patagonia patagonia .";
+
+        @include md{
+
+            grid-template-columns: repeat(6, 1fr);
+
+            grid-template-areas: 
+            "tnf tnf yeti yeti columbia columbia"
+            ". coleman coleman patagonia patagonia .";
+
+            gap: 20px;
+        }
+
+        @include lg{
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas: 
+            "tnf yeti columbia coleman patagonia";
+        }
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tnf{
+            grid-area: tnf;
+        }
+
+        #yeti{
+            grid-area: yeti;
+        }
+
+        #columbia{
+            grid-area: columbia;
+        }
+
+        #coleman{
+            grid-area: coleman;
+        }
+
+        #patagonia{
+            grid-area: patagonia;
+        }
+    }
 }
 
 #index-planning{
