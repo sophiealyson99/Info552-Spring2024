@@ -595,6 +595,12 @@ footer > div ul li a {
     height: 60vh;
   }
 }
+@media (min-width: 1024px) {
+  #index-hero-image {
+    height: 75vh;
+    background-position: center bottom;
+  }
+}
 
 #index-brands {
   padding: 32px 16px;

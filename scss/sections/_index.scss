@@ -36,6 +36,11 @@
     @include md{
         height: 60vh;
     }
+
+    @include lg{
+        height: 75vh;
+        background-position: center bottom;
+    }
 }
 
 #index-brands{
