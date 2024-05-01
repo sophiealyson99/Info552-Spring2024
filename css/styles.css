@@ -575,6 +575,58 @@ footer > div ul li a {
   }
 }
 
+#index-brands {
+  padding: 32px 16px;
+}
+#index-brands ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "tnf tnf yeti yeti" "columbia columbia coleman coleman" ". patagonia patagonia .";
+}
+#index-brands ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#index-brands ul #tnf {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tnf;
+}
+#index-brands ul #yeti {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: yeti;
+}
+#index-brands ul #columbia {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: columbia;
+}
+#index-brands ul #coleman {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: coleman;
+}
+#index-brands ul #patagonia {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: patagonia;
+}
+
 #index-planning {
   padding: 32px 16px;
   background-color: var(--blue);
