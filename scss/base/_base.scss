@@ -18,11 +18,11 @@ ul{
 .xxl-grid{
     @include xxl{
         display: grid;
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto, 1440px, auto;
         grid-template-areas: ". xxl-content .";
 
         .xxl-grid-item{
-            grid-area: "xxl-content";
+            grid-area: xxl-content;
         }
     }
 }
