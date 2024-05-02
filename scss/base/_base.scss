@@ -33,7 +33,7 @@ ul{
         grid-template-columns: auto, 1200px, auto;
         grid-template-areas: ". xl-content .";
 
-        .xxl-grid-item{
+        .xl-grid-item{
             grid-area: xl-content;
         }
     }
