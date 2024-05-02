@@ -54,6 +54,9 @@
     }
 
     @include xl{
+
+        padding: 0 2vw 40px 2vw; 
+
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 25vh 35vh 25vh;
 
