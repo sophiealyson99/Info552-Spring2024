@@ -22,7 +22,7 @@ ul{
         grid-template-areas: ". xxl-content .";
 
         .xxl-grid-item{
-            grid-area: xxl-content;
+            grid-area: "xxl-content";
         }
     }
 }
