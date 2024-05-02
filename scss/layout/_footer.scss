@@ -17,6 +17,10 @@ footer{
 
         padding-bottom: 32px;
 
+        @include xl{
+            width: 1200px;
+        }
+
         h2{
             font-size: rem-calc(24);
             font-weight: 600;

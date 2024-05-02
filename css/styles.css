@@ -370,6 +370,26 @@ ul li {
   }
 }
 
+@media (min-width: 1200px) {
+  .xl-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto, 1200px, auto;
+    grid-template-columns: auto, 1200px, auto;
+        grid-template-areas: ". xl-content .";
+  }
+  .xl-grid .xxl-grid-item {
+    grid-area: xl-content;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl-grid .xxl-grid-item {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -484,6 +504,11 @@ footer {
 }
 footer > div {
   padding-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  footer > div {
+    width: 1200px;
+  }
 }
 footer > div h2 {
   font-size: 1.5rem;
@@ -808,13 +833,47 @@ footer > div ul li a {
     padding: 32px 15vw;
   }
 }
-#index-weather #weather-icons {
+@media (min-width: 1024px) {
+  #index-weather {
+    padding: 40px 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  #index-weather #index-weather-xl-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 32px auto;
+    grid-template-columns: 50% auto;
+        grid-template-areas: "weather-content weather-icons";
+    gap: 32px;
+  }
+}
+#index-weather #index-weather-xl-grid #weather-icons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[2];
   grid-template-columns: repeat(2, 2fr);
 }
-#index-weather #weather-icons li {
+@media (min-width: 768px) {
+  #index-weather #index-weather-xl-grid #weather-icons {
+    -ms-grid-columns: 2fr 32px 2fr 32px 2fr 32px 2fr;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 32px;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #index-weather #index-weather-xl-grid #weather-icons {
+    grid-area: weather-icons;
+  }
+}
+@media (min-width: 1200px) {
+  #index-weather #index-weather-xl-grid #weather-icons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+#index-weather #index-weather-xl-grid #weather-icons li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,14 +884,14 @@ footer > div ul li a {
       -ms-flex-align: center;
           align-items: center;
 }
-#index-weather h1 {
+#index-weather #index-weather-xl-grid #weather-content h1 {
   color: var(--blue);
 }
-#index-weather h2 {
+#index-weather #index-weather-xl-grid #weather-content h2 {
   color: var(--aqua);
   margin-bottom: 8px;
 }
-#index-weather p {
+#index-weather #index-weather-xl-grid #weather-content p {
   margin-bottom: 24px;
 }
 
