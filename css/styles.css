@@ -502,13 +502,14 @@ footer {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (min-width: 1024px) {
+  footer {
+    background-position: center;
+    height: 70vh;
+  }
+}
 footer > div {
   padding-bottom: 32px;
-}
-@media (min-width: 1200px) {
-  footer > div {
-    width: 1200px;
-  }
 }
 footer > div h2 {
   font-size: 1.5rem;
@@ -526,6 +527,21 @@ footer > div form {
 @media (min-width: 768px) {
   footer > div form {
     width: 50vw;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div form {
+    width: 45vw;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div form {
+    width: 40vw;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div form {
+    width: 25vw;
   }
 }
 footer > div form > div {
