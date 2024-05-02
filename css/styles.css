@@ -929,6 +929,11 @@ footer > div ul li a {
 #views-hero p {
   color: var(--blue);
 }
+@media (min-width: 1200px) {
+  #views-hero p {
+    padding: 0 300px;
+  }
+}
 
 #views-gallery {
   padding: 0 16px 32px 16px;
@@ -943,7 +948,7 @@ footer > div ul li a {
 }
 @media (min-width: 768px) {
   #views-gallery {
-    padding: 0 10vw 32px 8vw;
+    padding: 0 8vw 32px 8vw;
     -ms-grid-columns: (1fr)[6];
     grid-template-columns: repeat(6, 1fr);
     -ms-grid-rows: 25vh 25vh 35vh 25vh;
