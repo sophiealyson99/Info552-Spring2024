@@ -199,6 +199,17 @@
         padding: 32px 15vw;
     }
 
+    #weather-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     h1{
         color: var(--blue);
     }
