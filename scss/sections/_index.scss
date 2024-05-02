@@ -13,6 +13,14 @@
             padding: 0 56px;
         }
 
+        @include lg{
+            padding: 0 20vw;
+        }
+
+        @include xxl{
+            padding: 0 400px;
+        }
+
         p{
             font-size: rem-calc(18);
             color: var(--blue);
