@@ -925,8 +925,33 @@ footer > div ul li a {
   color: var(--blue);
 }
 
-#views-gallery li img {
-  width: 100%;
+#views-gallery {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  -ms-grid-columns: 1fr 16px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+#views-gallery #g1 {
+  background-image: url("../Images/views/gallery-1.jpg");
+}
+#views-gallery #g2 {
+  background-image: url("../Images/views/gallery-2.jpg");
+}
+#views-gallery #g3 {
+  background-image: url("../Images/views/gallery-3.jpg");
+}
+#views-gallery #g4 {
+  background-image: url("../Images/views/gallery-4.jpg");
+}
+#views-gallery #g5 {
+  background-image: url("../Images/views/gallery-5.jpg");
+}
+#views-gallery #g6 {
+  background-image: url("../Images/views/gallery-6.jpg");
+}
+#views-gallery #g7 {
+  background-image: url("../Images/views/gallery-7.jpg");
 }
 
 /* =============

@@ -16,9 +16,40 @@
 }
 
 #views-gallery{
+
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+
     li{
-        img{
-            width: 100%;
-        }
+        
+    }
+
+    #g1{
+        background-image: url("../Images/views/gallery-1.jpg");
+    }
+
+    #g2{
+        background-image: url("../Images/views/gallery-2.jpg");
+    }
+
+    #g3{
+        background-image: url("../Images/views/gallery-3.jpg");
+    }
+
+    #g4{
+        background-image: url("../Images/views/gallery-4.jpg");
+    }
+
+    #g5{
+        background-image: url("../Images/views/gallery-5.jpg");
+    }
+
+    #g6{
+        background-image: url("../Images/views/gallery-6.jpg");
+    }
+
+    #g7{
+        background-image: url("../Images/views/gallery-7.jpg");
     }
 }
