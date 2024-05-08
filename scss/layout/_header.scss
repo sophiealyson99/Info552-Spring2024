@@ -3,5 +3,34 @@
 ============= */
 
 header{
-    // display: none; 
+    display: grid; 
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+    padding: 16px 0 16px 16px;
+
+    #logo-containter{
+        grid-area: logo;
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        button{
+            background-color: var(--white);
+            border: none;
+            color: var(--blue);
+            font-size: rem-calc(18);
+            // border: 1px solid red; 
+            padding: 16px;
+        }
+    }
+
+    nav{
+        grid-area: nav;
+    }
 }

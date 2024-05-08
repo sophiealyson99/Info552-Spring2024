@@ -462,6 +462,47 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+      grid-template-areas: "logo burger" "nav nav";
+  padding: 16px 0 16px 16px;
+}
+header #logo-containter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: burger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #burger-container button {
+  background-color: var(--white);
+  border: none;
+  color: var(--blue);
+  font-size: 1.125rem;
+  padding: 16px;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
@@ -573,6 +614,16 @@ footer > div ul li a {
 @media (min-width: 768px) {
   #index-hero > div {
     padding: 0 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #index-hero > div {
+    padding: 0 20vw;
+  }
+}
+@media (min-width: 1440px) {
+  #index-hero > div {
+    padding: 0 400px;
   }
 }
 #index-hero > div p {
@@ -807,6 +858,23 @@ footer > div ul li a {
   #index-weather {
     padding: 32px 15vw;
   }
+}
+#index-weather #weather-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+  grid-template-columns: repeat(2, 2fr);
+}
+#index-weather #weather-icons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #index-weather h1 {
   color: var(--blue);
