@@ -5,84 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome  -->
-    <script src="https://kit.fontawesome.com/cee62e1f21.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/cee62e1f21.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Week 6</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Week 6</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="Images/header/logo.svg" alt="mountain logo"></a>
-
-        <nav>
-           <ul>
-                <li>
-                    <a href="#"><img src="Images/header/icons/planning.svg" alt="planning icon">Planning</a>
-                </li>
-
-                <li>
-                    <a href="#"><img src="Images/header/icons/weather.svg" alt="weather icon">Weather</a>
-                </li>
-
-                <li>
-                    <a href="views.html"><img src="Images/header/icons/views.svg" alt="views icon">Views</a>
-                </li>
-
-                <li>
-                    <a href="contact.html"><img src="Images/header/icons/contact.svg" alt="contact icon">Contact</a>
-                </li>
-
-           </ul> 
-        </nav>
+        <header class="xl-grid">
+        <div id="header-container" class="xl-grid-item">
+            <div id="logo-container">
+                <a href="index.html"><img src="Images/header/logo.svg" alt="mountain logo"></a>
+            </div>
+    
+            <div id="burger-container">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+    
+            <nav id="main-nav">
+               <ul>
+                    <li>
+                        <a href="#index-planning"><i class="fa-solid fa-suitcase-rolling"></i>Planning</a>
+                    </li>
+    
+                    <li>
+                        <a href="#index-weather"><i class="fa-regular fa-sun"></i>Weather</a>
+                    </li>
+    
+                    <li>
+                        <a href="views.html"><i class="fa-solid fa-binoculars"></i>Views</a>
+                    </li>
+    
+                    <li>
+                        <a href="contact.html"><i class="fa-regular fa-paper-plane"></i>Contact</a>
+                    </li>
+    
+               </ul> 
+            </nav>
+        </div>
     </header>
 
-    <section id="views-hero">
-        <h1 class="pageTitle">Mountain Views</h1>
-        <p>If you’re doing an out and back route, remember that the trail can look different going down in the opposite direction. Be aware of the trail and periodically check that you’re in the right place on your GPS or map.</p>
-    </section>
+    <section id="views-hero" class="xl-grid">
+        <div class="xl-grid-item">
+            <h1 class="pageTitle">Mountain Views</h1>
+            <p>If you’re doing an out and back route, remember that the trail can look different going down in the opposite direction. Be aware of the trail and periodically check that you’re in the right place on your GPS or map.</p>
+        </div>   
+    </section>
 
-    <ul id="views-gallery">
-        <li><img src="Images/views/gallery-1.jpg" alt="gallery 1 image"></li>
-        <li><img src="Images/views/gallery-2.jpg" alt="gallery 2 image"></li>
-        <li><img src="Images/views/gallery-3.jpg" alt="gallery 3 image"></li>
-        <li><img src="Images/views/gallery-4.jpg" alt="gallery 4 image"></li>
-        <li><img src="Images/views/gallery-5.jpg" alt="gallery 5 image"></li>
-        <li><img src="Images/views/gallery-6.jpg" alt="gallery 6 image"></li>
-        <li><img src="Images/views/gallery-7.jpg" alt="gallery 7 image"></li>
-    </ul>
+    <section id="views-gallery-container" class="xl-grid">
+        <ul id="views-gallery" class="xl-grid-item">
+            <li id="g1"></li>
+            <li id="g2"></li>
+            <li id="g3"></li>
+            <li id="g4"></li>
+            <li id="g5"></li>
+            <li id="g6"></li>
+            <li id="g7"></li>
+        </ul>
+    </section>
 
-    <footer>
-        <div>
-            <h2>Sign Up!</h2>
+    <footer>
+        <div>
+            <h2>Sign Up!</h2>
 
-            <form action="#">
-                <div>
-                    <input type="text" placeholder="Email">
-                    <button><img src="Images/footer/plane.svg" alt="plane icon"></button>
-                </div>
-            </form>
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Email">
+                    <button><img src="Images/footer/plane.svg" alt="plane icon"></button>
+                </div>
+            </form>
 
-            <ul>
-                <li><a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <ul>
+                <li><a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
 
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
 
-                <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+                <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
 
-    <script src="js/scripts-dist.js"></script>
-    
+    <script src="js/scripts-dist.js"></script>
+    
 </body>
 
 </html>
