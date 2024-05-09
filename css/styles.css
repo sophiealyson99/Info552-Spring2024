@@ -459,6 +459,61 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+#main-nav {
+  background-color: var(--blueDark);
+  color: var(--white);
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  #main-nav {
+    background-color: var(--white);
+    padding: 0px 16px 0px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+}
+#main-nav ul li {
+  text-align: right;
+}
+#main-nav ul li a:link, #main-nav ul li a:visited {
+  display: inline-block;
+  padding: 16px 0;
+  color: var(--white);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+@media (min-width: 768px) {
+  #main-nav ul li a:link, #main-nav ul li a:visited {
+    color: var(--blue);
+  }
+}
+#main-nav ul li a:link i, #main-nav ul li a:visited i {
+  color: var(--red);
+  margin-right: 8px;
+}
+#main-nav ul li a:hover, #main-nav ul li a:active {
+  color: var(--red);
+}
+#main-nav ul li a:hover i, #main-nav ul li a:active i {
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */
@@ -468,11 +523,18 @@ header {
   -ms-grid-columns: 20% auto;
   grid-template-columns: 20% auto;
       grid-template-areas: "logo burger" "nav nav";
-  padding: 16px 0 16px 16px;
+}
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 30% auto;
+    grid-template-columns: 30% auto;
+        grid-template-areas: "logo nav";
+  }
 }
 header #logo-containter {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  padding: 16px 0 16px 16px;
   grid-area: logo;
 }
 header #burger-container {
@@ -489,6 +551,11 @@ header #burger-container {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 768px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header #burger-container button {
   background-color: var(--white);
   border: none;
@@ -496,11 +563,22 @@ header #burger-container button {
   font-size: 1.125rem;
   padding: 16px;
 }
-header nav {
+header #main-nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+}
+@media (min-width: 768px) {
+  header #logo-containter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header #main-nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
 }
 
 /* =============
