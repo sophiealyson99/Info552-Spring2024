@@ -483,9 +483,17 @@ a {
   text-decoration: none;
 }
 
+.hide-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hide-menu {
+    display: block;
+  }
+}
+
 #main-nav {
   background-color: var(--blueDark);
-  color: var(--white);
   padding: 16px;
 }
 @media (min-width: 768px) {

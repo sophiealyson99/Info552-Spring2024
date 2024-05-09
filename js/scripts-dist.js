@@ -1,0 +1,1 @@
+var burgerBtn=document.querySelector("#burger-btn"),mainNav=document.querySelector("#main-nav"),isNavVisible=!1;burgerBtn.addEventListener("click",(()=>{if(!1===e){mainNav.classList.remove("hide-menu");var e=!0}else{mainNav.classList.add("hide-menu");e=!1}}));
