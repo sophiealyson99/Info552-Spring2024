@@ -338,6 +338,10 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -348,6 +352,10 @@ ul li {
 
 .hide-img {
   display: none;
+}
+
+.header-padding {
+  padding-top: 90px;
 }
 
 @media (min-width: 1440px) {
