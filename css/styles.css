@@ -559,6 +559,7 @@ header {
   background-color: var(--white);
 }
 header #header-container {
+  padding-top: 8px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto;
@@ -1207,7 +1208,7 @@ footer > div ul li a {
     Contact
 ============= */
 #contact-hero {
-  padding: 90px 16px 32px;
+  padding: 100px 16px;
   text-align: center;
 }
 
@@ -1247,6 +1248,7 @@ footer > div ul li a {
   padding-left: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
 }
 #contact-form form div textarea {
   padding-top: 8px;
@@ -1255,6 +1257,7 @@ footer > div ul li a {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
 }
 #contact-form form div ::-webkit-input-placeholder {
   color: var(--blueDark);
